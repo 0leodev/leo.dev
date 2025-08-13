@@ -11,10 +11,12 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "leo.dev - Frontend Developer & Designer",
-  description:
-    "Cover letter and portfolio of leo.dev, a frontend developer and designer specializing in React, Next.js, and blockchain development.",
+  description: "Cover letter and portfolio of leo.dev, a frontend developer and designer specializing in React, Next.js, and blockchain development.",
   keywords: "frontend developer, designer, React, Next.js, TypeScript",
   authors: [{ name: "leo.dev" }],
+  icons: {
+    icon: "/favicon.ico",
+  },
 }
 
 export const viewport: Viewport = {
