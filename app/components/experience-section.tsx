@@ -1,5 +1,5 @@
-import { memo } from "react"
-import { Smartphone, Database, Code } from "lucide-react"
+import { memo } from 'react'
+import { Smartphone, Database, Code, Landmark } from 'lucide-react'
 
 const ExperienceCard = memo(function ExperienceCard({
   title,
@@ -43,41 +43,51 @@ const ExperienceCard = memo(function ExperienceCard({
 export default memo(function ExperienceSection() {
   const experiences = [
     {
-      title: "RENEW APPLICATION",
-      subtitle: "REACT NATIVE • TYPESCRIPT • MOBILE DEVELOPMENT",
+      title: 'BOLDER - BORROWING PROTOCOL',
+      subtitle: 'NEXT.JS • TYPESCRIPT • VIEM • WAGMI • LIQUITY V2',
       description:
-        "Religious application engineered for Android platform utilizing React Native Expo framework. Integrated comprehensive Bible API for seamless biblical reference insertion during devotional composition.",
+        'Building a borrowing protocol using Liquity v2 contracts with Next.js, TypeScript, Viem, and Wagmi. Implementing SOLID principles and scalable architecture for enhanced maintainability.',
       features: [
-        "PDF GENERATION & TEXT SHARING IMPLEMENTATION",
-        "ADMOB INTEGRATION: +58 BANNER REQUESTS (BETA)",
-        "MULTILINGUAL SUPPORT: SPANISH • ENGLISH",
-        "DEVELOPMENT CYCLE: 30 DAYS",
+        'UNDER CONTRUCTION...',
+      ],
+      icon: Landmark,
+    },
+    {
+      title: 'RENEW APPLICATION',
+      subtitle: 'REACT NATIVE • TYPESCRIPT • MOBILE DEVELOPMENT',
+      description:
+        'Religious application engineered for Android platform utilizing React Native Expo framework. Integrated comprehensive Bible API for seamless biblical reference insertion during devotional composition.',
+      features: [
+        'PDF GENERATION & TEXT SHARING IMPLEMENTATION',
+        'ADMOB INTEGRATION: +58 BANNER REQUESTS (BETA)',
+        'MULTILINGUAL SUPPORT: SPANISH • ENGLISH',
+        'DEVELOPMENT CYCLE: 30 DAYS',
       ],
       icon: Smartphone,
     },
     {
-      title: "WALLET RECOVERY SOLUTION",
-      subtitle: "NEXT.JS • FLASHBOTS • BLOCKCHAIN INTEGRATION",
+      title: 'WALLET RECOVERY SOLUTION',
+      subtitle: 'NEXT.JS • FLASHBOTS • BLOCKCHAIN INTEGRATION',
       description:
-        "Advanced blockchain solution for fund recovery from compromised wallets affected by sweeper bot contamination. Leverages Flashbots technology for secure transaction execution on Ethereum networks.",
+        'Advanced blockchain solution for fund recovery from compromised wallets affected by sweeper bot contamination. Leverages Flashbots technology for secure transaction execution on Ethereum networks.',
       features: [
-        "ETHEREUM MAINNET • SEPOLIA TESTNET SUPPORT",
-        "ETHERS.JS • INFURA • ETHERSCAN API",
-        "AUTOMATED FUND RECOVERY PROTOCOL",
-        "10% SERVICE FEE BUSINESS MODEL",
+        'ETHEREUM MAINNET • SEPOLIA TESTNET SUPPORT',
+        'ETHERS.JS • INFURA • ETHERSCAN API',
+        'AUTOMATED FUND RECOVERY PROTOCOL',
+        '10% SERVICE FEE BUSINESS MODEL',
       ],
       icon: Database,
     },
     {
-      title: "ETHGLOBAL BOGOTÁ 2022",
-      subtitle: "HACKATHON • SOLIDITY • IPFS • SMART CONTRACTS",
+      title: 'ETHGLOBAL BOGOTÁ 2022',
+      subtitle: 'HACKATHON • SOLIDITY • IPFS • SMART CONTRACTS',
       description:
-        "Led development of anonymous talent recruitment platform with integrated digital certification system. Implemented Solidity smart contracts and IPFS for secure, verifiable credential issuance.",
+        'Led development of anonymous talent recruitment platform with integrated digital certification system. Implemented Solidity smart contracts and IPFS for secure, verifiable credential issuance.',
       features: [
-        "ANONYMOUS RECRUITMENT NETWORK ARCHITECTURE",
-        "BLOCKCHAIN-BASED CERTIFICATION SYSTEM",
-        "SOLIDITY SMART CONTRACT DEVELOPMENT",
-        "IPFS INTEGRATION FOR CREDENTIAL STORAGE",
+        'ANONYMOUS RECRUITMENT NETWORK ARCHITECTURE',
+        'BLOCKCHAIN-BASED CERTIFICATION SYSTEM',
+        'SOLIDITY SMART CONTRACT DEVELOPMENT',
+        'IPFS INTEGRATION FOR CREDENTIAL STORAGE',
       ],
       icon: Code,
     },

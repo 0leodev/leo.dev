@@ -32,7 +32,7 @@ const HeroSection = memo(function HeroSection({
           <span className="hero-separator">DESIGNER</span>
         </div>
         <p className="hero-description">
-          Precision-driven development. Strategic problem solving. Uncompromising quality standards.
+          Precision-driven development. Strategic troubleshooting. Uncompromising quality standards.
         </p>
       </div>
 
