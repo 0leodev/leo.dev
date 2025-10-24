@@ -26,7 +26,7 @@
 
   /* Hero Section */
   .hero-bg {
-    @apply absolute inset-0 bg-gradient-to-b from-gray-950/90 via-black to-gray-950/90;;
+    @apply absolute inset-0 bg-black;
   }
 
   .hero-blur {
