@@ -75,7 +75,7 @@
   }
 
   .section-bg-alt {
-    @apply absolute inset-0 bg-gradient-to-b from-black via-gray-950/90 to-black;
+    @apply absolute inset-0 bg-gradient-to-b from-black to-gray-950/90;
     backdrop-filter: blur(64px);
   }
 
@@ -156,7 +156,7 @@
 
   /* Experience Cards */
   .experience-card {
-    @apply bg-gray-900/20 border border-gray-800/40 p-6 sm:p-8 lg:p-12 rounded-2xl;
+    @apply bg-gradient-to-b from-gray-950 to-black border border-gray-800/40 p-6 sm:p-8 lg:p-12 rounded-2xl;
   }
 
   .experience-header {
