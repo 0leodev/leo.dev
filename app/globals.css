@@ -73,12 +73,8 @@
     @apply absolute inset-0 bg-gradient-to-b from-black to-gray-950/90;
   }
 
-  .section-bg-portfolio {
+  .section-bg-github {
     @apply absolute inset-0 bg-gradient-to-b from-gray-950/90 via-black to-gray-950/90;
-  }
-
-  .section-bg-skills {
-    @apply absolute inset-0 bg-black/90;
   }
 
   .section-container {
@@ -86,7 +82,7 @@
   }
 
   .section-title {
-    @apply text-4xl sm:text-4xl lg:text-5xl font-extralight sm:mt-20 mb-10 sm:mb-16 text-center text-gray-300;
+    @apply text-4xl sm:text-5xl font-extralight sm:mt-20 mb-10 sm:mb-16 text-center text-gray-300;
     letter-spacing: 0.1em;
   }
 

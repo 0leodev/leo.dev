@@ -24,7 +24,7 @@ const ErrorDisplay = ({ message, onRetry }: { message: string; onRetry: () => vo
   </div>
 )
 
-export default function PortfolioSection() {
+export default function GithubSection() {
   const [repositories, setRepositories] = useState<Repository[]>([])
   const [isLoading, setIsLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
@@ -54,7 +54,7 @@ export default function PortfolioSection() {
 
   return (
     <section className="section-padding">
-      <div className="section-bg-portfolio" />
+      <div className="section-bg-github" />
       <div className="section-container">
         <h2 className="section-title">REPOS</h2>
 

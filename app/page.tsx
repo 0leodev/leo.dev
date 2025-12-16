@@ -1,24 +1,11 @@
 "use client"
 
 import { useState, useEffect, useCallback, memo } from "react"
-import dynamic from "next/dynamic"
 import { ChevronDown } from "lucide-react"
-
-const ExperienceSection = dynamic(() => import("./components/experience-section"), {
-  loading: () => <div className="h-96 bg-black/50 animate-pulse" />,
-})
-
-const PortfolioSection = dynamic(() => import("./components/portfolio-section"), {
-  loading: () => <div className="h-96 bg-black/50 animate-pulse" />,
-})
-
-const SocialFooter = dynamic(() => import("./components/social-footer"), {
-  loading: () => <div className="h-32 bg-black/50 animate-pulse" />,
-})
-
-const SocialHeader = dynamic(() => import("./components/social-header"), {
-  loading: () => <div className="h-32 bg-black/50 animate-pulse" />,
-})
+import SocialHeader from "./components/social-header"
+import ExperienceSection from "./components/experience-section"
+import GithubSection from "./components/github-section"
+import SocialFooter from "./components/social-footer"
 
 const HeroSection = memo(function HeroSection({
   isVisible,
@@ -72,7 +59,7 @@ export default function CoverLetter() {
     <div className="app-container">
       <HeroSection isVisible={isVisible} onScrollClick={handleHeroScroll} />
       <ExperienceSection />
-      <PortfolioSection />
+      <GithubSection />
       <SocialFooter />
     </div>
   )
