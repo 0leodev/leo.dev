@@ -34,7 +34,7 @@
   }
 
   .hero-content {
-    @apply relative z-10 text-center transition-all duration-1000 opacity-0 translate-y-10 md:mt-10;
+    @apply relative z-10 text-center transition-all duration-1000 opacity-0 translate-y-10;
     will-change: transform, opacity;
   }
 
@@ -94,7 +94,7 @@
   }
 
   .section-title {
-    @apply text-4xl sm:text-4xl lg:text-5xl font-extralight mt-20 mb-10 sm:mb-16 text-center text-gray-300;
+    @apply text-4xl sm:text-4xl lg:text-5xl font-extralight sm:mt-20 mb-10 sm:mb-16 text-center text-gray-300;
     letter-spacing: 0.1em;
   }
 
@@ -156,7 +156,7 @@
 
   /* Experience Cards */
   .experience-card {
-    @apply bg-gradient-to-b from-gray-950 to-black border border-gray-800/40 p-6 sm:p-8 lg:p-12 rounded-2xl;
+    @apply bg-black border border-gray-800/70 p-6 sm:p-8 lg:p-12 rounded-2xl;
   }
 
   .experience-header {
@@ -200,7 +200,7 @@
   }
 
   .repo-card {
-    @apply bg-black/70 border border-gray-800/40 p-6 sm:p-8 rounded-2xl hover:border-gray-700/60 transition-all duration-300;
+    @apply bg-black/70 border border-gray-800/70 p-6 sm:p-8 rounded-2xl hover:border-gray-700 transition-all duration-300;
     backdrop-filter: blur(40px);
   }
 
@@ -282,7 +282,7 @@
   }
 
   .footer-bg {
-    @apply absolute inset-0 bg-black;
+    @apply absolute inset-0;
     backdrop-filter: blur(64px);
   }
 
@@ -316,7 +316,7 @@
   }
 
   .social-link-header {
-    @apply w-12 h-12 lg:w-16 lg:h-16 bg-gradient-to-b from-gray-900/40 to-transparent flex items-center justify-center hover:bg-gray-700/60 transition-all duration-300 focus:outline-none rounded-xl;
+    @apply w-12 h-12 lg:w-16 lg:h-16 flex items-center justify-center hover:bg-gray-700/60 transition-all duration-300 focus:outline-none rounded-xl;
     backdrop-filter: blur(24px);
   }
 
@@ -416,3 +416,4 @@ video {
     transition-duration: 0.01ms !important;
   }
 }
+
