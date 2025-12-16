@@ -28,13 +28,13 @@ export const RepositoryCard = memo(function RepositoryCard({ repo }: RepositoryC
       </p>
       <p className="repo-description">{repo.description}</p>
 
-      <div className="flex items-center justify-between mt-4 text-xs text-gray-500">
+      <div className="flex items-center justify-between mt-4 text-xs font-medium text-gray-500">
         <div className="flex items-center">
-          <Star className="w-3 h-3 mr-1 text-gray-600" />
+          <Star className="w-4 h-4 mr-1 text-gray-600" />
           <span>{repo.stars}</span>
         </div>
         <div className="flex items-center">
-          <Clock className="w-3 h-3 mr-1 text-gray-600" />
+          <Clock className="w-4 h-4 mr-1 text-gray-600" />
           <span>{formatDate(repo.updatedAt)}</span>
         </div>
       </div>

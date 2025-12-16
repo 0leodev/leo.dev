@@ -15,7 +15,6 @@ const SocialLink = memo(function SocialLink({
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="social-link"
       aria-label={label}
     >
       {Icon === 'X' ? (
@@ -43,7 +42,6 @@ export default memo(function SocialFooter() {
 
   return (
     <footer className="footer-section">
-      <div className="footer-bg" />
       <div className="footer-container">
         <h3 className="footer-title">LEO.DEV</h3>
         <p className="footer-subtitle">PRECISION • INNOVATION • EXCELLENCE</p>

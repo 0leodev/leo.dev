@@ -33,7 +33,6 @@ const HeroSection = memo(function HeroSection({
         <h1 className="section-title">LEO.DEV</h1>
         <div className="hero-subtitle">
           <span className="hero-role">FRONTEND DEVELOPER</span>
-          <span className="hero-separator">DESIGNER</span>
         </div>
         <p className="hero-description">
           Precision-driven development. Strategic troubleshooting. Uncompromising quality standards.
