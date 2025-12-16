@@ -16,6 +16,7 @@ const SocialLink = memo(function SocialLink({
       target="_blank"
       rel="noopener noreferrer"
       aria-label={label}
+      className="focus:outline-none"
     >
       {Icon === 'X' ? (
         <svg className="social-icon" fill="currentColor" viewBox="0 0 24 24">
