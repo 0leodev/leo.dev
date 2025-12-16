@@ -16,6 +16,10 @@ const SocialFooter = dynamic(() => import("./components/social-footer"), {
   loading: () => <div className="h-32 bg-black/50 animate-pulse" />,
 })
 
+const SocialHeader = dynamic(() => import("./components/social-header"), {
+  loading: () => <div className="h-32 bg-black/50 animate-pulse" />,
+})
+
 const HeroSection = memo(function HeroSection({
   isVisible,
   onScrollClick,
@@ -34,6 +38,7 @@ const HeroSection = memo(function HeroSection({
         <p className="hero-description">
           Precision-driven development. Strategic troubleshooting. Uncompromising quality standards.
         </p>
+        <SocialHeader />
       </div>
 
       <button onClick={onScrollClick} className="hero-scroll-btn" aria-label="Scroll to next section">
