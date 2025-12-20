@@ -34,7 +34,7 @@
   }
 
   .hero-content {
-    @apply relative z-10 text-center transition-all duration-1000 opacity-0 mb-16;
+    @apply relative z-10 text-center transition-all duration-1000 opacity-0 mb-16 translate-y-10;
     will-change: transform, opacity;
   }
 
@@ -57,7 +57,11 @@
   }
 
   .hero-scroll-btn {
-    @apply absolute bottom-24 sm:bottom-12 left-1/2 transform -translate-x-1/2 opacity-60 hover:opacity-100 transition-opacity duration-300 focus:outline-none focus:opacity-100;
+    @apply absolute bottom-24 sm:bottom-12 left-1/2 transform -translate-x-1/2 opacity-0 hover:opacity-100 transition-opacity duration-3000 focus:outline-none focus:opacity-100;
+  }
+
+  .hero-scroll-visible {
+    @apply opacity-60 ;
   }
 
   /* Section Styles */
@@ -337,4 +341,5 @@ video {
     transition-duration: 0.01ms !important;
   }
 }
+
 
