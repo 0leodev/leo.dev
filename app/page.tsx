@@ -28,7 +28,7 @@ const HeroSection = memo(function HeroSection({
       </div>
 
       <button onClick={onScrollClick} className="hero-scroll-btn" aria-label="Scroll to next section">
-        <ChevronDown className="w-5 h-5 sm:w-6 sm:h-6 text-gray-500" />
+        <ChevronDown className="w-5 h-5 sm:w-6 sm:h-6 text-gray-300" />
       </button>
     </section>
   )
