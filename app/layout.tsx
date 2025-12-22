@@ -10,9 +10,9 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: "leo.dev - Frontend Developer & Designer",
-  description: "Cover letter and portfolio of leo.dev, a frontend developer and designer specializing in React, Next.js, and blockchain development.",
-  keywords: "frontend developer, designer, React, Next.js, TypeScript",
+  title: "leo.dev - Frontend Developer",
+  description: "Portfolio of leo.dev, a frontend developer specializing in React, Next.js, and blockchain development.",
+  keywords: "frontend developer, React, Next.js, TypeScript, Viem, Wagmi",
   authors: [{ name: "leo.dev" }],
   icons: {
     icon: "/favicon.ico",
