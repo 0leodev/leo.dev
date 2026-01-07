@@ -54,7 +54,7 @@ export default memo(function SocialFooter() {
 
         <div className="contact-info">
           <a
-            className="contact-item"
+            className="contact-item focus:outline-none"
             href="https://mail.google.com/mail/u/0/?fs=1&to=leojimdev@gmail.com&tf=cm"
             target="_blank"
             rel="noopener noreferrer"
