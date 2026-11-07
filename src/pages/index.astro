@@ -1,0 +1,18 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Hero from "../components/Hero"
+import Experience from "../components/Experience"
+import Repos from "../components/Repos.astro"
+import Footer from "../components/Footer"
+import StatusBar from "../components/StatusBar.astro"
+---
+
+<Layout>
+  <main class="pb-10">
+    <Hero client:load />
+    <Experience client:visible />
+    <Repos />
+    <Footer client:visible />
+  </main>
+  <StatusBar />
+</Layout>

@@ -1,0 +1,25 @@
+---
+import SectionHeader from "./SectionHeader"
+import RepoCard from "./RepoCard"
+import { getRepos } from "../lib/github"
+
+// Fetched at build time (SSG). Uses GITHUB_TOKEN if provided for higher rate limits.
+const repos = await getRepos()
+const anyLive = repos.some((r) => !r.fallback)
+---
+
+<section id="repos" class="mx-auto w-full max-w-5xl px-5 py-24 sm:px-8">
+  <SectionHeader client:load index="02" title="Repos" accent="cyan" />
+
+  {
+    !anyLive && (
+      <p class="mb-6 font-mono text-xs text-[var(--color-neon-yellow)]">
+        {"// live github data unavailable — showing repository links. set GITHUB_TOKEN to enable live stats."}
+      </p>
+    )
+  }
+
+  <div class="grid gap-5 md:grid-cols-2">
+    {repos.map((repo, i) => <RepoCard client:visible repo={repo} index={i} />)}
+  </div>
+</section>
